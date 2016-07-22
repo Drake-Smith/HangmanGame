@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<title>Hangman Game - by Drake Smith</title>
+</head>
+<body>
+
+
+
+
+<div class = "head">
+	<div class="jumbotron">
+		<h1><span><img class="eagle img-circle" src="assets/images/eagle.png"></span>Presidential Hangman<span><img class = "eagle img-circle" src="assets/images/eagle.png"></span></h1>
+		<br>
+
+		<audio id="Audio">
+  			<source src="assets/images/anthem.mp3" type="audio/mpeg">
+		</audio>
+		<button onclick="playAudio()" type = "button" class="btn btn-warning btn-md themeButton"><span class="glyphicon glyphicon-music"></span> Play National Anthem</button>
+		<button onclick="pauseAudio()" type = "button" class="btn btn-default btn-md pauseButton"><span class="glyphicon glyphicon-pause"></span> Pause</button>
+
+	</div>
+
+</div>
+
+<div class="container">
+	<div class="row">
+	<div class="col-lg-6 gameContent">
+				<h3>Wins: <span id="wincount">0</span></h3>
+				<h3>Losses: <span id="losscount">0</span></h3>
+				<div id="test"><img id ="winPic"></div>
+		</div>
+	<div class="col-lg-6 gameUpdate">
+		<h3>Press any letter key to get started!</h3>
+		<h3>Current Word: <span id="currentword"></span></h3>
+		<h3>Number of Guesses Remaining: <span id="guessesLeft"></span></h3>
+		<h3>Letters Already Guessed: <span id="lettersGuessed"></span></h3>
+	</div>
+	</div>
+</div>
+
+
+	<script src="assets/javascript/game.js"> </script>
+	
+</body>
+</html>
+
