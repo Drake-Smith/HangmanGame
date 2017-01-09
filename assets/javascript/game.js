@@ -56,6 +56,12 @@ function guessLetter(){
 		console.log(userInput);
 		correctGuess = false;
 
+		// for (var i = 0; i < lettersGuessed.length; i++) {
+		// 	if(lettersGuessed[i] == userInput {
+		//  		console.log("You already tried " + lettersGuessed[i] + ". Try another letter");
+		// 	}
+		//  }
+		}
 		//checks if your letter is in the word
 		for (var i = 0; i < selectedWord.length; i++){
 			if (userInput == selectedWord.substring(i, i + 1)){

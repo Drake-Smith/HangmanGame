@@ -1,3 +1,3 @@
 # HangmanGame
 
-https://presidential-hangman.herokuapp.com/
+https://presidenthangman.herokuapp.com/
